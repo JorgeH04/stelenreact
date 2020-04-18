@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import Nav from "./components/Nav";
 import Home from "./components/Home";
-import ProductList from "./components/Products/ProductList";
 import ProductFeatured from "./components/Products/ProductFeatured";
 import About from "./components/Products/About";
 import ProductDetails from "./components/Products/ProductDetails";
@@ -46,7 +45,6 @@ function App() {
 
   <Route path="/about" component={About} />
           
-  <Route path="/list" component={ProductList} exact />
   <Route
           path="/products/:_id"
           children={<ProductDetails></ProductDetails>}
