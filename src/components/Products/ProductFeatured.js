@@ -26,7 +26,7 @@ export default function ProductList() {
   <div className="img-container">
     <img src={post.image} alt={post.title || "default title"} />
     <Link to={`featured/${post._id}`} className="btn btn-primary product-link">
-          details
+          detalles
     </Link>
   
   </div>

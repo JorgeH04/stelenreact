@@ -29,7 +29,7 @@ export default function ProductDetails() {
               history.push("/cart");
             }}
           >
-            add to cart
+            Agregar al carro
           </button>
         </article>
       </section>
