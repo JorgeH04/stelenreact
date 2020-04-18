@@ -25,7 +25,7 @@ export async function getOne(url) {
 
 
 export function paginate(products) {
-    const itemsPerPage = 4;
+    const itemsPerPage = 8;
     const numberOfPages = Math.ceil(products.length / itemsPerPage);
     // const newProducts = Array.from({ length: numberOfPages }, (_, index) => {
     //   return products.splice(0, itemsPerPage);
