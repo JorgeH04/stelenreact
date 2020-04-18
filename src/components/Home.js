@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <Hero>
-        <Link to="/list" className="btn btn-primary btn-hero">
+        <Link to="/products" className="btn btn-primary btn-hero">
           Nuestros productos
         </Link>
       </Hero>
