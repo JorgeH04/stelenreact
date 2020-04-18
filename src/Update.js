@@ -21,7 +21,7 @@ export default class Destacados extends Component {
     }
 
    addPost(e){
-       fetch('https://stelenapp.herokuapp.com/api/post',{
+       fetch('https://stelenapp.herokuapp.com/api/post/add',{
          method: 'POST',
          body: JSON.stringify(this.state),
          headers: {
