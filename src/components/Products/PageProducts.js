@@ -59,7 +59,7 @@ export default function PaginatedProducts() {
   } else {
     return (
       <h3 className="search-errors">
-        unfortunately your search query did not return any products
+        lamentablemente su búsqueda no coincidió con ninguno de los productos
       </h3>
     );
   }

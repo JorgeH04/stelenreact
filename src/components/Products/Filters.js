@@ -69,7 +69,7 @@ export default function Filters() {
               checked={shipping}
               onChange={updateFilters}
             />
-            <label htmlFor="shipping">free shipping</label>
+            <label htmlFor="shipping"></label>
           </div>
         </div>
         {/* end of free shipping */}
@@ -122,12 +122,12 @@ export default function Filters() {
               checked={price === 5000}
               onChange={updateFilters}
             />
-            Over $5000
+            más que $5000
           </label>
         </div>
         {/* end of price   :{sorted.flat().length}  */}
       </form>
-      <h6>total productos  :{sorted.flat().length}</h6>
+      <h6>total de productos  :{sorted.flat().length}</h6>
       <hr />
     </section>
   );
