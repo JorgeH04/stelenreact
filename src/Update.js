@@ -21,7 +21,7 @@ export default class Destacados extends Component {
     }
 
    addPost(e){
-       fetch('http://localhost:4000/api/post/add',{
+       fetch('https://stelenapp.herokuapp.com/api/post',{
          method: 'POST',
          body: JSON.stringify(this.state),
          headers: {
@@ -48,7 +48,7 @@ export default class Destacados extends Component {
   }
 
    fetchPosts() {
-    fetch('http://localhost:4000/api/post')
+    fetch('https://stelenapp.herokuapp.com/api/post')
       .then(res => res.json())
       .then(data => {
         console.log(data);
@@ -60,7 +60,7 @@ export default class Destacados extends Component {
   }
 
   deletePost(_id){ 
-        fetch(`http://localhost:4000/api/post/delete/${_id}`, {
+        fetch(`https://stelenapp.herokuapp.com/api/post/delete/${_id}`, {
           method: 'DELETE',
           headers: {
             'Accept': 'application/json',

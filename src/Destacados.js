@@ -21,7 +21,7 @@ export default class Update extends Component {
     }
 
    addPost(e){
-       fetch('http://localhost:4000/adddos',{
+       fetch('https://stelenapp.herokuapp.com/adddos',{
          method: 'POST',
          body: JSON.stringify(this.state),
          headers: {
@@ -48,7 +48,7 @@ export default class Update extends Component {
   }
 
    fetchPosts() {
-    fetch('http://localhost:4000')
+    fetch('https://stelenapp.herokuapp.com')
       .then(res => res.json())
       .then(data => {
         console.log(data);
@@ -60,7 +60,7 @@ export default class Update extends Component {
   }
 
   deletePost(_id){ 
-        fetch(`http://localhost:4000/delete/${_id}`, {
+        fetch(`https://stelenapp.herokuapp.com/delete/${_id}`, {
           method: 'DELETE',
           headers: {
             'Accept': 'application/json',
